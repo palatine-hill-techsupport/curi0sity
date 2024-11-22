@@ -27,7 +27,8 @@ image.onload = () => {
     ctx.fillRect(0, 0, canvas.width, canvas.height);
 };
 
-canvas.addEventListener('click', () => {
+// Attach event listener to the entire <body> element
+document.body.addEventListener('click', () => {
     const totalPixels = canvas.width * canvas.height;
 
     if (revealedPixels >= totalPixels) return;
